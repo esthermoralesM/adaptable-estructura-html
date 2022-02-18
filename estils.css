@@ -1,0 +1,130 @@
+body{
+    max-width:1200px;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    justify-content:space-around;
+    background-color: rgba(49, 49, 51, 0.356);
+    border: 8px solid black;
+}
+
+header .titol{
+    width: 70%;
+    background-color: red;
+}
+
+header .p{
+ width: 10%;
+  background-color: red;
+}
+
+nav{
+    background-color: orange;  
+    border: 8px solid black;
+    border-top: none;
+    padding: 1em;
+}
+
+nav p{
+    background-color: yellow;
+    margin: auto;
+}
+
+.main{
+    display: flex;
+    margin-top: 1em;
+}
+
+section{
+    display: flex;
+    flex-direction: column; 
+    background-color: rgb(44, 44, 49);
+    width: 70%;
+    border: 8px solid black;
+    padding: 0.5em;
+}
+
+.seccio{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section article{
+    width: 45%;  
+}
+
+section article p{
+    background-color: rgb(144, 145, 230);
+    width: 95%;
+}
+
+section footer{
+    background-color: aqua;
+    width: 90%;
+    margin: auto;  
+}
+
+aside{
+   width: 30%;
+   background-color: red;
+   border: 8px solid black;
+   padding: 1em; 
+}
+
+aside p{
+    background-color:yellow ;
+}
+
+footer{
+    margin-top: 1em;
+    background-color: yellow;
+    border: 8px solid black;
+}
+
+
+@media all and (max-width: 810px){ 
+
+    .main{
+        flex-direction: column;
+        border: 8px solid yellow;
+    }
+
+    section{
+        width: 98%;
+        border: none;
+        border-bottom: 8px solid yellow;;
+    }
+
+    aside{
+        width: 96%;
+        border: none;
+    }
+}
+
+
+@media all and (max-width: 430px){ 
+    header{
+        flex-direction: column;
+       align-items: center;
+    }
+
+    header .titol{
+        width: 90%;
+    }
+
+    header .p{
+        width: 90%;
+    }
+
+    .seccio{
+        flex-direction: column;
+        align-items: center;  
+    }
+
+    section article{
+        width: 90%; 
+    }
+}
